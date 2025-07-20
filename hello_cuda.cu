@@ -1,4 +1,4 @@
-each cuda core runs multiple threads at a time
+// each cuda core runs multiple threads at a time
 #include <iostream>
 
 // function qualifier marks the function as kernel i.e. it will be called from the cpu but run on gpu 
