@@ -1,0 +1,13 @@
+# Ignore compiled files and temporary build files
+*.exe
+*.obj
+*.ilk
+*.pdb
+*.exp
+*.lib
+*.log
+*.tmp
+
+# Optional: Ignore your compiled CUDA intermediate files
+*.cubin
+*.ptx
