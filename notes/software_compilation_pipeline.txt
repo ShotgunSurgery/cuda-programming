@@ -1,0 +1,29 @@
+1. Preprocessing 
+
+All lines starting with '#', the entire process is done by the compiler but each step is handled by different 
+tools inside the compiler. This step is done by the 'Preprocessor' tool. It does this -> 
+1. In the code replaces 
+all 'macros'(#define N 16 where ever N is used it replaces that with 16), 
+2. replaces all #include with their header
+files, 
+3. removes all comments. 
+4. resolves all conditions (#define N = 12; IF N > 10 X = 1;...)
+5.. It basically generates a intermediate file -> file.i after Preprocessing
+
+2. Compilation 
+
+1. Syntax analysis (Parsing) -> checks if syntax is correct and wrong one is caught here 
+2. Semantic analysis (ex: variable isn't being used without declaration)
+3. intermediate Representation Generation 
+4. "The compiler is smarter than you think" aka Code optimization (ex: eliminate dead code)
+5. translate to assembly -> output is a file.s
+
+3. Assembly 
+
+1. "Assembler" tool converts assembly instructions into binary code (opcode)
+2. Generates object file (file.o)
+
+4. Linking 
+
+1. "Linker" tool combines one or more .o files + libraries to make a final binary executable 
+2. final file.out / file.exe(windows) is generated 

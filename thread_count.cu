@@ -7,7 +7,7 @@ __global__ void threadCount() {
 }
 
 int main(){
-    // launch 1 block with 5 threads 
+    // launch 1 block    with 5 threads 
     threadCount<<<1, 5>>>();
     cudaDeviceSynchronize();
     return 0;
