@@ -27,3 +27,5 @@ files,
 
 1. "Linker" tool combines one or more .o files + libraries to make a final binary executable 
 2. final file.out / file.exe(windows) is generated 
+
+this follows a top to bottom approach 
