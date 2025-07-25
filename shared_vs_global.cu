@@ -12,6 +12,7 @@ int main(){
         h_input[i] = i;
 
         int *d_input, *d_output;
+        
                     
     }
 }

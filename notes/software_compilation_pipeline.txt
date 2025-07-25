@@ -29,3 +29,6 @@ files,
 2. final file.out / file.exe(windows) is generated 
 
 this follows a top to bottom approach 
+
+* bottom to top approach -> start from int main function whenver a class or function is encountered then it goes above and checks
+if it's defined or not and if it's header files are included or not 
