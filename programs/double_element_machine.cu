@@ -32,7 +32,7 @@ cudaEventRecord(start);  // Start timing
 double_function<<<1, n>>>(gpu_arr, n);
 
 cudaEventRecord(stop);   // Stop timing
- 
+    
 cudaEventSynchronize(stop);  // Wait for kernel to finish
 
 cudaEventElapsedTime(&milliseconds, start, stop);
