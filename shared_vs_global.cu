@@ -1,6 +1,7 @@
 // shared memory -> avaliable to all threads in a block (but not between diffrent blocks) -> low latency/ size -> used 
-// to temorarily store data in while the kernel execution 
-// global memory -> GPU's VRAM -> avaliable to all blocks -> more latency/ size
+// to temorarily store data in while the kernel execution, hence it only lives till the kernel is running, not accessible to cpu private to blocks
+// global memory -> GPU's VRAM -> avaliable to all blocks -> more latency/ size -> it's accessible to the cpu -> when we do something like this - cudaMalloc((void**)& device_output, size * sizeof(int));
+// that memory is allocated on the VRAM 
 #include <stdio.h>
 #include <cuda_runtime.h> // CUDA runtime api -> provides runtime level functions and defs to 1. allocate memory
 // 2. transfer data between CPU and GPU 3.Launch and manage kernels from host(CPU)
