@@ -42,7 +42,7 @@ for(int j = 0; j < size; j++){
     printf("%d ", host_result[j]);
 }
 
-printf("\n");
+printf("\n");   
 float milliseconds = 0;
 cudaEventElapsedTime(&milliseconds, start, stop);
 printf("Time taken by kernel: %f ms\n", milliseconds);
